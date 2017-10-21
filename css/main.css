@@ -1,0 +1,36 @@
+body {
+  font-family: sans-serif;
+}
+
+nav {
+  /*outline: 2px solid yellow;*/
+}
+
+ul {
+  /*outline: 1px solid blue;*/
+  list-style: none;
+  margin: 0;
+  padding: 0; /*estos dos ultimos en 0 correran las cajas más pegadas a la izquierda*/
+  background: #2e2e2a;
+  line-height: 40px;
+  overflow: auto; /*Este le devuelve el contexto de bloque al ul que el li le quitó con el float*/
+}
+
+li {
+  /*outline: 1px solid red;*/
+  width: 100px;
+  /*display: inline-block;*/
+  text-align: center;
+  float: left; /* Esta es la segunda versión para evitar el display inline-block*/
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+a:hover {
+  background: #f9a91a;
+  color: #000;
+}
